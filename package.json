@@ -1,6 +1,6 @@
 {
   "name": "@xpc/koa2-middleware-ua",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A middleware that set ua object for every incoming HTTP request in Koa2.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,8 @@
     "build": "tsc",
     "dev": "tsc -w",
     "example": "tsc & node example/server.js",
-    "test": "jest --coverage --env=node"
+    "test": "jest --coverage --env=node",
+    "prepublishOnly": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,14 @@
     "middleware",
     "ua"
   ],
-  "author": "fe@xinpianchang.com",
+  "author": "chengyu@xinpianchang.com",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@types/koa": "^2.11.3",
     "@types/node": "^13.13.2",
     "koa": "^2.11.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "rimraf": "3.0.2"
   }
 }
