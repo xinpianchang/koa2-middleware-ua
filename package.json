@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@io.vmovier.cc:7999/h5static/koa2-middleware-ua.git"
+    "url": "git+https://github.com/xinpianchang/koa2-middleware-ua.git"
   },
   "keywords": [
     "koa2",
